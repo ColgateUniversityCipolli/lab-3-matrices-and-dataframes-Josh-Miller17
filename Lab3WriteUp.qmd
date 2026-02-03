@@ -210,7 +210,11 @@ Solution:
 Compute the product below in `R` and store it in an object `T`.
 $$\mathbf{T} = \mathbf{A}\mathbf{M}.$$
 
-
+Solution:
+```{r}
+#| size: "scriptsize" 
+(T <- A %*% M) # Created matrix T
+```
 
 ## Part c
 Create `basis.vector.1` (first column of `T`) and `basis.vector.2` (second column of `T`) in `R`.
