@@ -219,6 +219,13 @@ Solution:
 ## Part c
 Create `basis.vector.1` (first column of `T`) and `basis.vector.2` (second column of `T`) in `R`.
 
+Solution:
+```{r}
+#| size: "scriptsize" 
+(basis.vector.1 <- T[, 1]) # created basis.vector.1 
+(basis.vector.2 <- T[, 2]) # created basis.vector.2
+```
+
 ## Part d
 Compute the points $p_0$, $p_1$, $p_2$, and $p_3$.
 
