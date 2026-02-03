@@ -229,11 +229,45 @@ Solution:
 ## Part d
 Compute the points $p_0$, $p_1$, $p_2$, and $p_3$.
 
+Solution:
+```{r}
+#| size: "scriptsize" 
+(p0 <- c(0, 0)) 
+(p1 <- c(2, 4))
+(p2 <- c(3, 6))
+(p3 <- c(1, 2)) # created points p0, p1, p2, p3
+```
+
 ## Part e
 Copy and paste the code for plotting the unit square. Edit the code to draw the segments that form the boundary based on the points in Part d.
 
+Solution:
+```{r}
+#| label: fig-matrixT2
+#| fig-cap: "Matrix T2."
+#| fig-width: 3
+#| fig-height: 3
+#| scale: "80%"
+#| fig-align: "center"
+#| size: "scriptsize"
+ggplot() +
+  geom_segment(aes(x = p0[1], y = p0[2], xend = p1[1], yend = p1[2])) +
+  geom_segment(aes(x = p1[1], y = p1[2], xend = p2[1], yend = p2[2])) +
+  geom_segment(aes(x = p2[1], y = p2[2], xend = p3[1], yend = p3[2])) +
+  geom_segment(aes(x = p3[1], y = p3[2], xend = p0[1], yend = p0[2])) +
+  theme_bw() +
+  xlim(0, 7) +
+  ylim(0, 7) +
+  labs(x = "x", y = "y")
+```
+
 ## Part f
 Interestingly, the determinant of $\mathbf{A}$ gives us the area of the shape plotted in Part e. Find the determinant of $\mathbf{A}$.
+
+```{r}
+#| size: "scriptsize" 
+(A.determinant <- det(A)) # found determinant of A
+```
 
 # Question 3
 We can conduct a shear transformation that keeps the area of the shape the same but horizontally or vertically slants the object. 
