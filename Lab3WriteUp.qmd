@@ -121,14 +121,21 @@ Create the matrix `A` in `R`.
 $$\mathbf{A} = \begin{bmatrix} 1 & -7 \\ 5 & 9 \end{bmatrix}$$
 
 Solution:
-(M <- matrix(data = c(1, 5, -7, 9), nrow = 2, ncol = 2)) # created matrix M
+(A <- matrix(data = c(1, 5, -7, 9), nrow = 2, ncol = 2)) # created matrix A
 
 ## Part b
 Compute the product below in `R` and store it in an object `T`.
 $$\mathbf{T} = \mathbf{A}\mathbf{M}.$$
 
+Solution: 
+(T <- A %*% M) # Created matrix T
+
 ## Part c
 Create `basis.vector.1` (first column of `T`) and `basis.vector.2` (second column of `T`) in `R`.
+
+Solution:
+(basis.vector.1 <- T[, 1]) # created basis.vector.1 
+(basis.vector.2 <- T[, 2]) # created basis.vector.2
 
 ## Part d
 Compute the points $p_0$, $p_1$, $p_2$, and $p_3$.
