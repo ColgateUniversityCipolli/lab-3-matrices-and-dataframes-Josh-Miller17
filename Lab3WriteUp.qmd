@@ -453,6 +453,7 @@ Solution:
 ## Part e
 Remove `eval: false` in the code below. The result should look like a ladder and a very rectangular house if part a is correct. The new leaning ladder should look like it is leaning on the house.
 
+Solution:
 ```{r}
 #| label: fig-ladder2
 #| fig-cap: "A ladder and a leaning ladder."
